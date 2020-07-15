@@ -27,7 +27,7 @@ variables:
   - name: PEER-IP
     description: please type in peer IP
     default: 1.1.1.1
-    type_hint: ipv4
+    type_hint: text
 
 snippets:
   - name: ipsec-test.conf
