@@ -17,12 +17,12 @@ labels:
 # variables used in the configuration templates
 # type_hint defines the form field type in pan-cnc
 variables:
-  - name: AWS-GW-1-KEY
+  - name: AWS_GW_1_KEY
     description: AWS vpn gateway 1 preshared-key
     default: n/a
     type_hint: text
 
-  - name: AWS-GW-2-KEY
+  - name: AWS_GW_2_KEY
     description: AWS vpn gateway 2 preshared-key
     default: n/a
     type_hint: text
