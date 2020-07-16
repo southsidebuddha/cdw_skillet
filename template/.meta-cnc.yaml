@@ -26,7 +26,7 @@ variables:
       Firewalls need to be added to template stacks and assigned with variables manually
       you can check the rendered config to see what the actual config are.
 
-    type_hint: disabled
+    type_hint: text_area
     attributes:
       rows: 5
       cols: 10
