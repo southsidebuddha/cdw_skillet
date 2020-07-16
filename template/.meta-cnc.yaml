@@ -27,6 +27,9 @@ variables:
       you can check the rendered config to see what the actual config are.
 
     type_hint: disabled
+    attributes:
+      rows: 5
+      cols: 10
   - name: AWS_GW_1_KEY
     description: AWS VPN gateway 1 preshared-key
     default: Z^brHwU^w6Ux2T^9VUN
