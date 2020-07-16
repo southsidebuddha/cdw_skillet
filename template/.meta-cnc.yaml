@@ -1,10 +1,8 @@
-# set_commands is used to load a full NGFW configuration
-
 # snippet folder name
-name: AWS_TGW_firewall_config
+name: AWS AWS transit gateway palo alto firewall config
 # label used for menu selection
-label: AWS_transit_gateway
-description: firewall config for Palo Alto AWS_transit_gateway
+label: AWS transit gateway
+description: This is the palo alto firewall config for Palo Alto AWS transit gateway architecture
 dependency:
 # type of device configuration
 type: template
@@ -12,16 +10,21 @@ extends:
 
 # grouping of like snippets for dynamic menu creation in pan-cnc
 labels:
-  service_type: AWS_TGW
+  service_type: AWS transit gateway
   collection:
-    - AWS_TGW
+    - AWS transit gateway
 
 # variables used in the configuration templates
 # type_hint defines the form field type in pan-cnc
 variables:
-  - name: TEST
-    description: for test
-    default: test
+  - name: AWS-GW-1-KEY
+    description: AWS vpn gateway 1 preshared-key
+    default: n/a
+    type_hint: text
+
+  - name: AWS-GW-2-KEY
+    description: AWS vpn gateway 2 preshared-key
+    default: n/a
     type_hint: text
 
 snippets:
