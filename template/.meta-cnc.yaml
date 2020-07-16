@@ -20,11 +20,11 @@ variables:
   - name: disabled_entry
     description: Please read the following 
     default: |
-    You must read the palo alto AWS Transit Gateway Deployment Guide.
-     The panorama config are generated following the the deployment 
-     guide but combine the east west with outbound firewall.
-     Firewalls need to be added to template stacks and assigned with variables manually
-     you can check the rendered config to see what the actual config are.
+      You must read the palo alto AWS Transit Gateway Deployment Guide.
+      The panorama config are generated following the the deployment 
+      guide but combine the east west with outbound firewall.
+      Firewalls need to be added to template stacks and assigned with variables manually
+      you can check the rendered config to see what the actual config are.
 
     type_hint: disabled
   - name: AWS_GW_1_KEY
