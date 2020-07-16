@@ -19,21 +19,23 @@ labels:
 variables:
   - name: disabled_entry
     description: Please read the following 
-    default: You must read the palo alto AWS Transit Gateway Deployment Guide.\
-     The panorama config are generated following the the deployment guide but combine the east west with outbound firewall.\
+    default: |
+    You must read the palo alto AWS Transit Gateway Deployment Guide.
+     The panorama config are generated following the the deployment 
+     guide but combine the east west with outbound firewall.
      Firewalls need to be added to template stacks and assigned with variables manually
-     you can check the rendered config to see what the actual config are
+     you can check the rendered config to see what the actual config are.
 
     type_hint: disabled
   - name: AWS_GW_1_KEY
     description: AWS VPN gateway 1 preshared-key
     default: Z^brHwU^w6Ux2T^9VUN
-    type_hint: this is the dummy IPSEC pre-shared key value, you have to overide it manually from the template stack on panorama  
+    help_text: this is the dummy IPSEC pre-shared key value, you have to overide it manually from the template stack on panorama  
 
   - name: AWS_GW_2_KEY
     description: AWS VPN gateway 2 preshared-key
     default: Z^brHwU^w6Ux2T^9VUN
-    type_hint: this is the dummy IPSEC pre-shared key value, you have to overide it manually from the template stack on panorama
+    help_text: this is the dummy IPSEC pre-shared key value, you have to overide it manually from the template stack on panorama
 
 
 
